@@ -4,4 +4,4 @@ Recurrent Neural Network(RNN) are a type of Neural Network where the output from
 
 RNN have a “memory” which remembers all information about what has been calculated. It uses the same parameters for each input as it performs the same task on all the inputs or hidden layers to produce the output. This reduces the complexity of parameters, unlike other neural networks.
 
-<img scr https://www.google.com/url?sa=i&url=https%3A%2F%2Fdeepai.org%2Fmachine-learning-glossary-and-terms%2Frecurrent-neural-network&psig=AOvVaw2CRAhnclpFAl_uxpShpSoI&ust=1592231640135000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMC2zL3DgeoCFQAAAAAdAAAAABAO>
+
