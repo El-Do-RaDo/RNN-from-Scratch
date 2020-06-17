@@ -16,3 +16,34 @@ Machine Translation (e.g. Google Translate) is done with “many to many” RNNs
 
 Sentiment Analysis (e.g. Is this a positive or negative review?) is often done with “many to one” RNNs. The text to be analyzed is fed into an RNN, which then produces a single output classification.
 
+HOW IT WORKS:
+
+Let’s consider a “many to many” RNN with inputs x_0, x_1, … x_n that wants to produce outputs y_0, y_1, … y_n. These x_i and y_i are vectors and can have arbitrary dimensions.
+
+RNNs work by iteratively updating a hidden state h, which is a vector that can also have arbitrary dimension. At any given step t,
+1.The next hidden state h_t is calculated using the previous hidden state h_{t-1} and the next input x_t.
+
+2.The next output y_t is calculated using h_t.
+
+<img src="https://miro.medium.com/max/1400/1*xOA99bS7A6utGocZ0l8L4g.png">
+
+Here’s what makes a RNN recurrent: it uses the same weights for each step. More specifically, a typical vanilla RNN uses only 3 sets of weights to perform its calculations:
+
+1. Wxh, used for all x_t → h_t links.
+
+2. Whh, used for all h_{t-1} → h_t links.
+
+3. Why, used for all h_t → y_t links.
+
+We’ll also use two biases for our RNN:
+
+1.b_h, added when calculating h_t.
+
+2.b_y, added when calculating y_t.
+
+We’ll represent the weights as matrices and the biases as vectors. These 3 weights and 2 biases make up the entire RNN!
+
+EQUATION THAT PUTS EVERYTHING TOGETHER:
+
+<img src="https://miro.medium.com/max/1400/1*FieGId293KkBQnTu7jL5_g.png">
+
