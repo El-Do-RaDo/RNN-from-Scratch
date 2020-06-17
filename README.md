@@ -11,6 +11,8 @@ One issue with vanilla neural nets (and also CNNs) is that they only work with p
 <img src="https://miro.medium.com/max/1400/0*toBP1hMLUPqAM-KI.jpg"> 
 
 This ability to process sequences makes RNNs very useful. For example:
+
 Machine Translation (e.g. Google Translate) is done with “many to many” RNNs. The original text sequence is fed into an RNN, which then produces translated text as output.
-Sentiment Analysis (e.g. Is this a positive or negative review?) is often done with “many to one” RNNs. The text to be analyzed is fed into an RNN, which then produces a single output classification. 
+
+Sentiment Analysis (e.g. Is this a positive or negative review?) is often done with “many to one” RNNs. The text to be analyzed is fed into an RNN, which then produces a single output classification.
 
