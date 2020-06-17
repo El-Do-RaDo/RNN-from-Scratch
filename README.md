@@ -6,3 +6,11 @@ RNN have a “memory” which remembers all information about what has been calc
 
 <img src="https://miro.medium.com/max/1400/1*K6s4Li0fTl1pSX4-WPBMMA.jpeg">
 
+One issue with vanilla neural nets (and also CNNs) is that they only work with pre-determined sizes: they take fixed-size inputs and produce fixed-size outputs. RNNs are useful because they let us have variable-length sequences as both inputs and outputs. Here are a few examples of what RNNs can look like:
+
+<img src="https://miro.medium.com/max/1400/0*toBP1hMLUPqAM-KI.jpg"> 
+
+This ability to process sequences makes RNNs very useful. For example:
+Machine Translation (e.g. Google Translate) is done with “many to many” RNNs. The original text sequence is fed into an RNN, which then produces translated text as output.
+Sentiment Analysis (e.g. Is this a positive or negative review?) is often done with “many to one” RNNs. The text to be analyzed is fed into an RNN, which then produces a single output classification. 
+
